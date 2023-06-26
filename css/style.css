@@ -200,6 +200,10 @@ article.presentacion{
     text-align: start;
     line-height: 1.5;
 }
+article.presentacion p{
+  text-align:justify;
+}
+
 a.btn{
   margin-top: 1em;
     background-color: #176B87;
@@ -292,13 +296,14 @@ a.btn:hover{
       width: 100%;
       padding-top: 1em;
       padding-left: 1em;
-      text-align: start;
+      text-align: center;
       line-height: 1.5;
   }
   article h1{
-    text-align: center;
     font-size: 36px;
   }
+
+
     .contacto{
       padding-top: 0;
       
