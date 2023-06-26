@@ -303,7 +303,10 @@ a.btn:hover{
     font-size: 36px;
   }
 
-
+  article.presentacion p{
+    text-align:center;
+  }
+  
     .contacto{
       padding-top: 0;
       
