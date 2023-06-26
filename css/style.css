@@ -22,7 +22,7 @@
     padding: 0;
     border: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     vertical-align: baseline;
   }
   img {
@@ -30,9 +30,9 @@
     width: 100%;
     display: block;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     -o-object-position: center center;
-       object-position: center center;
+    object-position: center center;
   }
 
 
@@ -81,14 +81,14 @@
     font-family: inherit;
     font-size: inherit;
     -webkit-hyphens: auto;
-        -ms-hyphens: auto;
-            hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
     background-color: transparent;
     display: block;
   
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
   }
   
   table, tr, td {
@@ -123,13 +123,13 @@
   }
 /*------------------------------- codigo -------------------------------*/
 body{
-
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   font-size: 18px;
   background-color: #DAFFFB;
+  color: #001C30;
 }
 .logo{
   width:3em;
@@ -137,6 +137,7 @@ body{
 }
 .header{
   background-color: #001C30;
+  box-shadow:0px 5px 10px  #001C30;
 }
   .header .button{
     display: none;
@@ -159,9 +160,10 @@ body{
     margin: 0 0.5em;
     font-size: 1.5em;
   }
-  a.active:hover{
+  a.inicio:hover{
+    color: #001C30;
     background-color: #64CCC5;
-    transition: background-color 0.3s;
+    transition: .5s ease;
   }
 
   section{ 
@@ -171,9 +173,8 @@ body{
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    padding: 16px;
     min-height: 100vh;
-    padding-top: 100px;
+    padding-top: 150px;
 }
 section h1{
   font-size: 42px;
@@ -202,12 +203,17 @@ article.presentacion{
 a.btn{
   margin-top: 1em;
     background-color: #176B87;
+    box-shadow:0px 5px 10px  #001C30;
     color: #fbfbfb;
     padding: 12px 20px;
     border-radius: 50px;
     font-size: 20px;
     display: inline-block;
 
+}
+a.btn:hover{
+  background-color: #001C30;
+  transition: 1s ease;
 }
 .contacto{
     width: 100%;
@@ -218,7 +224,7 @@ a.btn{
 }
 .contacto-parrafo{
     width: 60%;
-    height: 10em;
+    height: 11em;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -228,6 +234,7 @@ a.btn{
 }
 .contacto-parrafo h2{
     font-size: 36px;
+    padding-bottom: 0.5em;
 }
 .contacto-parrafo p{
   text-align: center;
@@ -244,9 +251,7 @@ a.btn{
     width: 5rem;
 }
 .footer{
-  font-size: 1.5em;
     width: 100%;
-  
     text-align: center;
     line-height: 4em;
     background-color: #176B87;
@@ -283,12 +288,6 @@ a.btn{
     section{
       flex-flow: column nowrap;
     }
-    .contacto-parrafo{
-      width: 100%;
-      height: 15em;
-      align-items: center;
-      padding: 1em;
-    }
     article.presentacion{
       width: 100%;
       padding-top: 1em;
@@ -300,6 +299,19 @@ a.btn{
     text-align: center;
     font-size: 36px;
   }
+    .contacto{
+      padding-top: 0;
+      
+    }
+    .contacto-parrafo{ 
+      
+      width: 100%;
+      height: 15em;
+      align-items: center;
+      padding: 1.5em;
+      margin-top: 3em;
+    }
+  
   .lista-redes{
     gap: 20px;
   }
@@ -308,5 +320,9 @@ a.btn{
 }
 .redes{
   width: 80%;
+}
+figure.presentacion-img img{
+    border-radius: 50%;
+    width: 300px;
 }
   }

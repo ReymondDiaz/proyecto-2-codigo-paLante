@@ -4,7 +4,7 @@ const li= document.querySelectorAll('.li');
 
 
 button.addEventListener('click',()=>{
-    nav.classList.toggle('active')
+    nav.classList.toggle('active')  
 });
 
 li.forEach(function(item) {
