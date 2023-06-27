@@ -174,7 +174,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding-top: 150px;
+
 }
 section h1{
   font-size: 42px;
@@ -213,12 +213,16 @@ a.btn{
     border-radius: 50px;
     font-size: 20px;
     display: inline-block;
-
+    transition: 0.3s ease;
 }
 a.btn:hover{
   background-color: #001C30;
-  transition: 1s ease;
+  transform: translateY(-7px)
 }
+a.btn:active{
+  transform: translateY(-1px);
+}
+
 .contacto{
     width: 100%;
     height: 100vh;
@@ -291,6 +295,11 @@ a.btn:hover{
     }
     section{
       flex-flow: column nowrap;
+    }
+
+    section.inicio{
+      padding-top: 11em;
+      
     }
     article.presentacion{
       width: 100%;
